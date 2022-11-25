@@ -1,6 +1,25 @@
-# Arduino-based-robotic-car-with-G-sensor
-#code
+![Car](https://user-images.githubusercontent.com/32926144/204031427-6d897c76-a962-4154-ac50-8f55f074ad9d.jpg)
+n this article, we are going to Control the Robot Car through the G sensor of our mobile phone and you will be able to move the Robot just by tilting the Phone. We will also use Arduino and RemoteXY app for this G-Sensor Controlled Robot. RemoteXY app is used to create the interface in the Smart Phone for controlling the Robot. We will add the joystick in the interface so that Robot can also be controlled by Joystick as well as by tilting the phone.
 
+Circuit Diagram
+![Circuit Diagram](https://user-images.githubusercontent.com/32926144/204031560-42b42916-6c35-4b6d-8d1e-b46d772b7c70.png)
+
+G-Sensor or Gravity sensor is basically Accelerometer in Smart phone which is used to control the screen orientation of the phone. Accelerometer senses the X,Y, Z directions of the Gravitational force and rotate the Screen according to alignment of the Phone. Now days, more sensitive and accurate Gyroscope sensor is used in mobiles for deciding the orientation of the Screen. In our Project, Robot car will move, according to the direction in which phone is being tilted, like when we tilt the phone forward, then car will move forward and we tilt it down then car will move backward. This is same like when we play some car games in Mobile, they also use G sensor to move the car accordingly.
+
+Required Components:
+Two wheel robot car chassis
+Arduino UNO *L298N Motor Controller
+HC-06 Bluetooth module (HC-05 will work too)
+Power supply or Cells
+Connecting wires
+
+Creating Interface for Robot using RemoteXY app:
+For creating the interface to control the Robot Car using RemoteXY app, you will have to go to following link http://remotexy.com/en/editor
+
+The webpage will look like this:
+![Interface](https://user-images.githubusercontent.com/32926144/204031615-55e772ef-b40f-4ba7-a536-8cd074144c1a.jpg)
+
+Code
 #define REMOTEXY_MODE__SOFTWARESERIAL  
 #include <SoftwareSerial.h>             //Including the software serial library
 #include <RemoteXY.h>                   //Including the remotexy library

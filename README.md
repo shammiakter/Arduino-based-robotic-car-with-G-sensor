@@ -1,4 +1,5 @@
 ![Car](https://user-images.githubusercontent.com/32926144/204031427-6d897c76-a962-4154-ac50-8f55f074ad9d.jpg)
+
 In this article, we are going to Control the Robot Car through the G sensor of our mobile phone and you will be able to move the Robot just by tilting the Phone. We will also use Arduino and RemoteXY app for this G-Sensor Controlled Robot. RemoteXY app is used to create the interface in the Smart Phone for controlling the Robot. We will add the joystick in the interface so that Robot can also be controlled by Joystick as well as by tilting the phone.
 
 **Circuit Diagram**
